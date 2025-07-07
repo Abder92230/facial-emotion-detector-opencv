@@ -1,37 +1,41 @@
-````markdown
 # Détection faciale et reconnaissance des émotions avec OpenCV
 
-> Un projet personnel de vision par ordinateur mêlant détection de visages et classification d’émotions à l’aide de modèles DNN et mini_XCEPTION.
+> Un projet personnel de vision par ordinateur mêlant détection de visages et classification d’émotions à l’aide de modèles DNN et mini\_XCEPTION.
 
 ## 👨‍💻 Réalisé par
-**Abderrahmane Benali**
+
+Abderrahmane Benali
 
 ## 📸 Objectif du projet
 
 Ce projet a été développé dans un cadre académique, mais l’ensemble du code, des optimisations et des scripts a été conçu et codé intégralement par moi-même. L’objectif était double :
 
-- **Détecter automatiquement les visages** dans des images ou via une webcam, avec un modèle DNN optimisé.
-- **Identifier les émotions faciales** en temps réel ou sur images fixes, à l’aide d’un modèle mini_XCEPTION pré-entraîné.
+* Détecter automatiquement les visages dans des images ou via une webcam, avec un modèle DNN optimisé.
+* Identifier les émotions faciales en temps réel ou sur images fixes, à l’aide d’un modèle mini\_XCEPTION pré-entraîné.
 
 ---
 
 ## 🧠 Modèles utilisés
 
-- **Détection des visages** : `res10_300x300_ssd_iter_140000.caffemodel` + `deploy.prototxt` (modèle SSD basé sur Caffe)
-- **Reconnaissance des émotions** : `fer2013_mini_XCEPTION.102-0.66.hdf5` (pré-entraîné sur le dataset FER-2013)
+* Détection des visages : `res10_300x300_ssd_iter_140000.caffemodel` + `deploy.prototxt` (modèle SSD basé sur Caffe)
+* Reconnaissance des émotions : `fer2013_mini_XCEPTION.102-0.66.hdf5` (pré-entraîné sur le dataset FER-2013)
 
 ---
 
 ## ⚙️ Prérequis & Installation
 
 ### Système conseillé
-- macOS (M1 ou Intel), Ubuntu ≥ 20.04
+
+* macOS (M1 ou Intel)
+* Ubuntu ≥ 20.04
 
 ### Installation des dépendances
 
 ```bash
 pip install -r requirements.txt
-````
+```
+
+---
 
 > Tous les packages sont compatibles avec ARM (testé sur MacBook Air M1 – 8Go RAM).
 
