@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Spécifique au projet de détection émotionnelle
+new_env/
+output_images/
+*.log
+*.DS_Store
