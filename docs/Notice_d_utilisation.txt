@@ -1,0 +1,106 @@
+
+# **Notice d'utilisation détaillée**
+
+## **Titre : Notice d'utilisation du projet Mini-Projet : Détection des émotions faciales**
+
+---
+
+### **1. Introduction**
+Ce projet repose sur des technologies de vision par ordinateur et d'apprentissage automatique pour détecter les visages et reconnaître les émotions faciales. Les principales fonctionnalités incluent :
+1. Analyse des émotions faciales dans des images fixes.
+2. Analyse en temps réel avec une caméra.
+
+Les émotions détectées sont : Colère, Dégoût, Peur, Joie, Tristesse, Surprise et Neutre.
+
+---
+
+### **2. Configuration requise**
+- **Système d'exploitation** : Ubuntu ou équivalent.
+- **Python** : Version 3.8 ou supérieure.
+- **Mémoire vive** : 8 Go recommandés.
+- **Bibliothèques nécessaires** : listées dans `requirements.txt`.
+
+---
+
+### **3. Installation**
+1. **Téléchargez et décompressez le projet** :
+   - Si vous avez reçu une archive, décompressez-la :
+     ```bash
+     unzip mini_projet.zip
+     ```
+   - Naviguez dans le dossier :
+     ```bash
+     cd mini_projet
+     ```
+
+2. **Installez les dépendances** :
+   - Exécutez :
+     ```bash
+     ./install.sh
+     ```
+   Ce script installe Python, pip, et toutes les bibliothèques nécessaires.
+
+3. **Vérifiez l'installation** :
+   - Assurez-vous que le dossier `output_images/` est présent :
+     ```bash
+     ls output_images
+     ```
+
+---
+
+### **4. Fonctionnalités principales**
+
+#### **4.1. Détection d'émotions dans des images**
+1. Placez vos images dans le dossier `images/`.
+2. Exécutez :
+   ```bash
+   ./run_image_detection.sh
+   ```
+3. Consultez les images traitées dans `output_images/`.
+
+---
+
+#### **4.2. Détection d'émotions en temps réel**
+1. Exécutez :
+   ```bash
+   ./run_camera_detection.sh
+   ```
+2. Une fenêtre s'ouvre avec le flux vidéo de votre caméra :
+   - Appuyez sur **`c`** pour capturer une image et l'enregistrer dans `output_images/`.
+   - Appuyez sur **`q`** pour quitter.
+
+---
+
+### **5. Fichiers inclus**
+- **face_detectionV2.py** : Script pour la détection dans les images.
+- **real_time_emotion_detection.py** : Script pour la détection en temps réel.
+- **models/** : Contient les modèles pré-entraînés nécessaires.
+- **install.sh** : Automatisation de l'installation.
+- **run_image_detection.sh** et **run_camera_detection.sh** : Scripts pour exécuter les fonctionnalités.
+
+---
+
+### **6. Problèmes fréquents et solutions**
+- **Problème : La caméra ne s'ouvre pas.**
+  - **Solution** : Vérifiez que la caméra est bien configurée (macOS peut nécessiter des autorisations).
+
+- **Problème : Les dépendances ne s'installent pas.**
+  - **Solution** : Assurez-vous que `pip` est installé :
+    ```bash
+    sudo apt install python3-pip
+    ```
+
+- **Problème : Aucun visage n'est détecté.**
+  - **Solution** : Assurez-vous que les modèles dans `models/` sont bien présents et accessibles.
+
+---
+
+### **7. Support et contact**
+Pour toute question ou problème, contactez les auteurs :
+- **Nom : Abderrahmane Benali**
+- **Nom : Mariam Tandia**
+
+---
+
+### **8. Notes complémentaires**
+Ce projet a été développé dans un environnement Python sur un MacBook Air M1 et testé sous Ubuntu. Des ajustements peuvent être nécessaires pour d'autres configurations.
